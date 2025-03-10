@@ -1,0 +1,34 @@
+// components/HeroSection.js
+"use client";
+
+export function AboutSection() {
+  return (
+   <>
+    <section className="p-3 h-[80vh] max-h-[550] max-w-[1600px] w-screen flex items-center justify-center  bg-cover bg-center bg-no-repeat"  style={{
+        backgroundImage: "url('/background_for_about_section.png')",
+      }}>
+      <div className=" text-left sm:text-center font-semibold max-w-[800px]">
+        <p style={{ color: "#FFB204" }} className="text-sm pl-3 ">
+          Earn & Learn on Delux{" "}
+        </p>
+        <h1 className="text-4xl font-bold text-black mb-4 pl-3">
+          What is Delux About?
+        </h1>
+        <p className=" text-sm md:text-xl text-gray-600 font-light p-3 mb-8">
+          DELUX represents elegancy, abundance and also makes one financial
+          independent, inclusive and stabilization. DELUX enables you to
+          monetize your social media accounts for yielding and acquiescent
+          income, on DELUX we make sure as a user your time being online and the
+          value to work from your comfort zone doesn't become emancipated. Here
+          we offer you the opportunity to access jobs easily, also creating
+          financial liberation for everyone globally. Here we empower you,
+          stabilize you financially, and make sure your financial excel
+          momentously. DELUX is a universal assistant that serves her User
+          continuously.
+        </p>
+      </div>
+    </section>
+
+   </>
+  );
+}
