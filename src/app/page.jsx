@@ -1,4 +1,3 @@
-
 import { FeaturesGrid } from "@/components/ui/featuresSection";
 import { HeroSection } from "@/components/ui/heroSection";
 import { Padding } from "@/components/ui/padding";
@@ -11,34 +10,31 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-     
-      <AboutSection />
-    <div className="sm:hidden" >
-    <Padding />
-      <Padding />
-      
 
-      <Padding />
-      <Padding />
-      <Padding />
-    </div>
+      <AboutSection />
+      <div className="sm:hidden">
+        <Padding />
+        <Padding />
+        <Padding />
+        <Padding />
+        <Padding />
+      </div>
       <FeaturesSection />
       <Padding />
       <Padding />
       <Padding />
       <ContactSection />
       <RankingSection />
-      <AdditionalInfo/>
-      <Padding/>
-      <AjoSection/>
+      <AdditionalInfo />
+      <Padding />
+      <AjoSection />
     </>
   );
 }
 
-
 function FeaturesSection() {
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 text-left mx-auto max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl p-3">
+    <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 text-left mx-auto max-w-2xl sm:mt-14 lg:mt-10 lg:max-w-4xl p-3">
       <FeaturesGrid />
     </section>
   );
@@ -51,4 +47,3 @@ function ContactSection() {
     </section>
   );
 }
-
