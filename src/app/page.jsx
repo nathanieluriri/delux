@@ -26,6 +26,8 @@ export default function Home() {
     <>
       <HeroSection />
       <Padding />
+      <Padding />
+      <Padding />
       <AboutSection />
       <FeaturesSection />
       <Padding />
