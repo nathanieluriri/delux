@@ -6,26 +6,13 @@ import { Sheet, SheetTrigger, SheetContent, SheetHeader, SheetTitle, SheetDescri
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
-
+import { MenuIcon } from 'lucide-react';
 export function MenuButton() {
   return (
     <Sheet>
       <SheetTrigger asChild>
         <Button variant="ghost" className="md:hidden text-white hover:text-white text-5xl hover:bg-transparent">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            className="w-15 h-15"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="3"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
+          <MenuIcon size={34} height={34} width={34}/>
         </Button>
       </SheetTrigger>
       <SheetContent className="bg-[rgb(35,23,12)] text-white">
@@ -54,8 +41,8 @@ export function Navbar() {
         <div className="text-white text-2xl font-bold">
           <Image
             src={'/logo.png'}
-            height={50}
-            width={50}
+            height={34}
+            width={34}
             alt='Logo'
           />
         </div>

@@ -13,6 +13,15 @@ export default function Home() {
       <HeroSection />
      
       <AboutSection />
+    <div className="sm:hidden" >
+    <Padding />
+      <Padding />
+      
+
+      <Padding />
+      <Padding />
+      <Padding />
+    </div>
       <FeaturesSection />
       <Padding />
       <Padding />
