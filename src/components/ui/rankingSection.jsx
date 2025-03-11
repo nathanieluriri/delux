@@ -1,32 +1,42 @@
 import Image from "next/image";
+
 export function RankingSection() {
-  return (
-    <>
-      <p style={{ color: "#FFB204" }} className="text-base">
-        What Are Delux Ranks?
-      </p>
-      <p className="max-w-[500px] justify-center items-center justify-self-center flex m-auto text-2xl font-bold text-black mb-4">
-        Now, there are Various Ranks for Daily Jobbers
-      </p>
-      <ol className="pl-5 space-y-2 text-xl">
-        <li>1. Trainees</li>
-        <li>2. Senior Trainees </li>
-        <li>3. Super Trainees &</li>
-        <li>4. Managers </li>
-      </ol>
-      <div className="justify-center justify-self-center items-center flex">
-        <Image
-          src={"/rankers_structure.jpg"}
-          width={800}
-          height={500}
-          alt="Earnings"
-        />
-      </div>
-      <p>
-        Once a Daily Jobber steps up to the highest rank which is Manager Rank,
-        they can start withdrawing every month from their daily job Earnings 
-      </p>
-      
-    </>
-  );
-}
+    return (
+      <>
+        <section className="bg-[rgb(1,1,1)] relative overflow-hidden">
+          {" "}
+          <div className="relative mx-auto flex flex-col lg:flex-row items-center justify-between p-6">
+            <div className="w-full md:w-1/2 flex justify-center rounded-full">
+              <Image
+                className="rounded-2xl"
+                src={"/rankers_structure.jpg"}
+                width={400}
+                height={400}
+                alt="Ranking Structure"
+              />
+            </div>
+            <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto xl:py-32 lg:text-left">
+              {" "}
+              <h2 className="text-white text-balance text-3xl font-semibold tracking-tight text-primary-text sm:text-3xl">
+                {" "}
+                Now, there are Various Ranks
+                <br className="hidden md:block" /> for Daily Jobbers
+              </h2>{" "}
+              <p className="text-white max-w-[400px] mt-6 text-pretty text-lg/8 text-secondary-text">
+                These ranks are meant to engage users that can't refer, and help
+                them get Rewards and Qualify for various features on the website
+                as they level up their ranks 📌
+              </p>
+              <a
+                href="#"
+                className="mx-auto lg:mx-0 block w-fit mt-6 px-6 py-3 bg-amber-500 transition-all duration-300 text-white  rounded-lg hover:bg-amber-700"
+              >
+                Learn More <span className="text-lg">→</span>
+              </a>{" "}
+            </div>
+          </div>
+        </section>
+      </>
+    );
+  }
+  

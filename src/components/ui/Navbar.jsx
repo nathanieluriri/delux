@@ -12,7 +12,7 @@ export function Navbar() {
   };
 
   return (
-    <nav className="bg-black p-4">
+    <nav className="bg-[rgb(74,48,22)] p-4">
       <div className="max-w-screen-[1600px] mx-auto flex justify-around items-center">
         {/* Logo */}
         <div className="text-white text-2xl font-bold">
