@@ -4,7 +4,7 @@
 export function AboutSection() {
   return (
    <>
-    <section className="p-3 h-fit max-h-[550] max-w-[1600px] w-screen flex items-center justify-center  bg-cover bg-center bg-no-repeat"  style={{
+    <section className="p-3 pt-12  h-fit max-h-[550] max-w-[1600px] w-screen flex items-center justify-center  bg-cover bg-center bg-no-repeat"  style={{
         backgroundImage: "url('/background_for_about_section.png')",
       }}>
       <div className=" text-left sm:text-center font-semibold max-w-[800px]">
