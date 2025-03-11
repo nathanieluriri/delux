@@ -8,7 +8,7 @@ export function AboutSection() {
         backgroundImage: "url('/background_for_about_section.png')",
       }}>
       <div className="pl-6 text-left sm:text-center font-semibold max-w-[800px]">
-        <p style={{ color: "#FFB204" }} className="text-2xl  pl-3 ">
+        <p style={{ color: "#FFB204" }} className="text-xl  pl-3 ">
           Earn & Learn on Delux{" "}
         </p>
         <h1 className="text-4xl font-bold text-black mb-4 pl-3">
