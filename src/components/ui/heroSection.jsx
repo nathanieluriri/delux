@@ -7,7 +7,7 @@ export function HeroSection() {
 
   return (
     <section
-      className="relative h-[100vh] w-screen max-w-[1600px] max-h-[660px] flex items-center justify-center bg-cover bg-center bg-no-repeat"
+      className="relative h-[100vh] w-screen max-w-[1600px] max-h-[660px] flex items-center justify-center justify-self-center bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: "url('/background_for_menu_button.png')",
       }}
@@ -25,23 +25,9 @@ export function HeroSection() {
           your time online is valuable. Here, we offer job opportunities and
           financial empowerment for users globally.
         </p>
-        <button
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
-          className="text-white px-6 py-3 text-lg rounded-md transition-colors duration-300 "
-          style={{
-            backgroundColor: isHovered ? "transparent" : "#DCAB05",
-            color: "white",
-            border: "2px",
-            borderColor: "white",
-            
-            padding: "8px 10px",
-            cursor: "pointer",
-            transition: "background-color 0.3s ease",
-          }}
-        >
-          Get Started <span className="text-lg" >→</span>
-        </button>
+        <button className="text-sm bg-amber-500 text-white px-6 py-2 rounded-lg duration-300 flex items-center gap-2 mt-4 m-auto hover:bg-amber-600 transition-all">
+            Get Started <span className="text-lg">→</span>
+          </button>
       </div>
     </section>
   );

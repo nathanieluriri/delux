@@ -11,7 +11,7 @@ export function MenuButton() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="ghost" className="md:hidden text-white text-5xl hover:bg-transparent">
+        <Button variant="ghost" className="md:hidden text-white hover:text-white text-5xl hover:bg-transparent">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -28,7 +28,7 @@ export function MenuButton() {
           </svg>
         </Button>
       </SheetTrigger>
-      <SheetContent className="bg-[rgb(74,48,22)] text-white">
+      <SheetContent className="bg-[rgb(35,23,12)] text-white">
         <SheetHeader>
           <SheetTitle className="text-white">Menu</SheetTitle>
           <SheetDescription className="text-gray-300">
@@ -48,7 +48,7 @@ export function MenuButton() {
 
 export function Navbar() {
   return (
-    <nav className="bg-[rgb(74,48,22)] p-4">
+    <nav className="bg-[rgb(35,23,12)] p-4">
       <div className="max-w-screen-[1600px] mx-auto flex justify-around items-center">
         {/* Logo */}
         <div className="text-white text-2xl font-bold">
