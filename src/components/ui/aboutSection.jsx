@@ -4,11 +4,11 @@
 export function AboutSection() {
   return (
    <>
-    <section className="p-3 mt-[160px] sm:mt-[10px] pt-22 md:pt-6 h-fit max-h-[550] max-w-[1600px] w-screen flex items-center justify-center  bg-cover bg-center bg-no-repeat"  style={{
+    <section className=" mt-[160px] sm:mt-[10px] pt-22 md:pt-6 h-fit max-h-[550] max-w-[1600px] w-screen flex items-center justify-center  bg-cover bg-center bg-no-repeat"  style={{
         backgroundImage: "url('/background_for_about_section.png')",
       }}>
-      <div className="p-6 text-left sm:text-center font-semibold max-w-[800px]">
-        <p style={{ color: "#FFB204" }} className="text-sm pl-3 ">
+      <div className="pl-6 text-left sm:text-center font-semibold max-w-[800px]">
+        <p style={{ color: "#FFB204" }} className="text-base pl-3 ">
           Earn & Learn on Delux{" "}
         </p>
         <h1 className="text-4xl font-bold text-black mb-4 pl-3">
