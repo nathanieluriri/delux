@@ -3,11 +3,11 @@ export function AdditionalInfo() {
   return (
     <section className="bg-gray-100 relative overflow-hidden">
       <div className="pt-23">
-        <h2 className="text-center text-base/7 font-semibold text-secondary z-20 text-[rgb(82,81,22)]">
-          Deploy faster
+        <h2 className="text-center text-base/7 font-semibold  z-20 text-[rgb(82,81,22)]">
+          Delux Services
         </h2>
         <p className="mx-auto mt-2 max-w-lg text-balance text-center text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-          Everything you need to deploy your app
+          Everything you need to Know About Delux Services
         </p>
       </div>
       <div className="mt-10 grid gap-1 sm:mt-16 lg:grid-cols-3">
@@ -24,7 +24,7 @@ export function AdditionalInfo() {
                 engaging our content on their social media accounts
               </p>
             </div>
-            <div className=" relative min-h-[30rem]  w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
+            <div className=" relative h-[30rem]   lg:min-h-[30rem]   max-h-[330px]  w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
               <div className="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-amber-600 bg-black shadow-2xl">
                 <Image
                   src={"/tiktok.png"}
@@ -50,7 +50,7 @@ export function AdditionalInfo() {
                 Delux Games to win amazing prizes and earn extra income.
               </p>
             </div>
-            <div className=" relative min-h-[30rem]  w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
+            <div className=" relative h-[30rem] lg:min-h-[30rem]     max-h-[330px]  w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
               <div className="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-amber-600 bg-black shadow-2xl">
                 <Image
                   src={"/delux_games.png"}
@@ -76,7 +76,7 @@ export function AdditionalInfo() {
                 per clip 0.2€, Anonymous reviews per review 0.1€
               </p>
             </div>
-            <div className=" relative min-h-[30rem]  w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
+            <div className=" relative h-[30rem] lg:min-h-[30rem]    max-h-[330px] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
               <div className="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-amber-600 bg-black shadow-2xl">
                 <Image
                   src={"/features.png"}

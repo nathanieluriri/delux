@@ -3,7 +3,7 @@ export function FootMenu() {
   return (
     <>
       <div className=" flex flex-col justify-self-center">
-        <hr className="md:hidden block border-2 rounded-full border-dashed" />
+        <hr className="hidden md:block border-2 rounded-full border-dashed" />
 
         <div className=" flex md:flex-row md:justify-between md:p-10 p-3 justify-center flex-col-reverse md:gap-0 gap-14">
           <div className="flex flex-col gap-5 sm:items-center md:items-start">
