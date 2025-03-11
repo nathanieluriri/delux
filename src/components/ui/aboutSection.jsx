@@ -12,9 +12,9 @@ export function AboutSection() {
           Earn & Learn on Delux{" "}
         </p>
         <h1 className="text-4xl font-bold text-black mb-4 pl-3">
-          What is Delux About?
+          WHAT IS DELUX ABOUT?
         </h1>
-        <p className=" text-sm md:text-xl text-gray-600 font-light p-3 mb-8">
+        <p className=" text-base/7 md:text-xl text-gray-600  p-3 mb-8">
           DELUX represents elegancy, abundance and also makes one financial
           independent, inclusive and stabilization. DELUX enables you to
           monetize your social media accounts for yielding and acquiescent

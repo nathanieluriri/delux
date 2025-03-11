@@ -19,7 +19,7 @@ export function HeroSection() {
 
         <h1 className="text-5xl font-semibold tracking-tight text-white sm:text-7xl font-sans">Delux</h1>
         <h3 className="text-center text-balance px-8 md:px-0 text-3xl font-semibold tracking-tight text-gray-300 sm:text-5xl">Unleash your opulence</h3>
-        <p className="mt-8 text-pretty text-gray-400 sm:text-xl/8 text-center px-6 md:px-0 max-w-5xl text-xl font-medium md:max-w-2xl mx-auto">
+        <p className="mt-8 text-pretty text-gray-100 sm:text-xl/8 text-center px-6 md:px-0 max-w-5xl text-xl font-medium md:max-w-2xl mx-auto">
           DELUX enables you to monetize
           your social media accounts for yielding income. On DELUX, we ensure
           your time online is valuable. Here, we offer job opportunities and
