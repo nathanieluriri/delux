@@ -79,7 +79,7 @@ export function AdditionalInfo() {
             <div className=" relative h-[30rem] lg:min-h-[30rem]    max-h-[330px] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
               <div className="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-amber-600 bg-black shadow-2xl">
                 <Image
-                  src={"/features.png"}
+                  src={"/earning_structure.png"}
                   height={300}
                   width={300}
                   alt="delux games flyer"
