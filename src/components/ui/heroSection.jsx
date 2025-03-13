@@ -1,17 +1,19 @@
 "use client";
-
+import {useOverlay} from "@/components/ui/overlayComponent";
 import React, { useState } from "react";
 
 export function HeroSection() {
   const [isHovered, setIsHovered] = useState(false);
-
+  const { isOpen, openOverlay, closeOverlay, OverlayContent } = useOverlay();
   return (
     <section
+    
       className="relative h-[100vh] w-screen max-w-[1600px] max-h-[660px] flex items-center justify-center justify-self-center bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: "url('/background_for_menu_button.png')",
       }}
     >
+      <OverlayContent isOpen={isOpen} onClose={closeOverlay} />
       {/* Overlay div */}
       <div className="absolute inset-0 bg-black opacity-30 bg-opacity-10"></div>
       <div className="relative text-center p-8 max-w-[800px]">
@@ -25,7 +27,7 @@ export function HeroSection() {
           your time online is valuable. Here, we offer job opportunities and
           financial empowerment for users globally.
         </p>
-        <button className="text-sm bg-amber-500 text-white px-6 py-2 rounded-lg duration-300 flex items-center gap-2 mt-4 m-auto hover:bg-amber-600 transition-all">
+        <button onClick={openOverlay} className="text-sm bg-amber-500 text-white px-6 py-2 rounded-lg duration-300 flex items-center gap-2 mt-4 m-auto hover:bg-amber-600 transition-all">
             Get Started <span className="text-lg">→</span>
           </button>
       </div>

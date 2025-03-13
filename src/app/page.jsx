@@ -1,6 +1,10 @@
+"use client";
 import { FeaturesGrid } from "@/components/ui/featuresSection";
 import { HeroSection } from "@/components/ui/heroSection";
 import { Padding } from "@/components/ui/padding";
+
+// pages/index.js or any other component
+import {useOverlay} from "@/components/ui/overlayComponent";
 import { AboutSection } from "@/components/ui/aboutSection";
 import { ContactSectionComponent } from "@/components/ui/contactSection";
 import { RankingSection } from "@/components/ui/rankingSection";
@@ -9,9 +13,11 @@ import { AjoSection } from "@/components/ui/ajoSection";
 import Image from "next/image";
 
 export default function Home() {
+  const { isOpen, openOverlay, closeOverlay, OverlayContent } = useOverlay();
   return (
     <>
-      <HeroSection />
+    <OverlayContent isOpen={isOpen} onClose={closeOverlay} />
+    <HeroSection />
 
       <AboutSection />
       <div className="sm:hidden">

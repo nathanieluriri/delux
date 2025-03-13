@@ -1,6 +1,10 @@
+"use client";
+import {useOverlay} from "@/components/ui/overlayComponent";
 export function ContactSectionComponent() {
+  const { isOpen, openOverlay, closeOverlay, OverlayContent } = useOverlay();
   return (
     <>
+    <OverlayContent isOpen={isOpen} onClose={closeOverlay} />
       <div className="flex flex-col lg:flex-row justify-between items-start md:items-center gap-0 lg:gap-14">
         <div className="md:max-w-lg xl:max-w-xl text-justify">
           <h2 className="text-3xl font-bold text-amber-400">Contact Us</h2>
@@ -17,13 +21,13 @@ export function ContactSectionComponent() {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="#"
+            href="register"
             className="text-sm border border-amber-400 text-amber-400 px-2 duration-300 py-2 rounded-lg flex items-center gap-2 hover:bg-amber-400 hover:text-white transition-all"
           >
-            Get Coupon <span className="text-lg">🎟️</span>
+            Regsiter <span className="text-lg">→</span>
           </a>
-          <button className="text-sm bg-amber-500 text-white px-6 py-2 rounded-lg duration-300 flex items-center gap-2 hover:bg-amber-600 transition-all">
-            Register <span className="text-lg">→</span>
+          <button onClick={openOverlay} className="text-sm bg-amber-500 text-white px-6 py-2 rounded-lg duration-300 flex items-center gap-2 hover:bg-amber-600 transition-all">
+            Get Coupon Code <span className="text-lg">🎟️</span>
           </button>
         </div>
       </div>

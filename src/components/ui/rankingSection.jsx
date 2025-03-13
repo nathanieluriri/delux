@@ -28,10 +28,10 @@ export function RankingSection() {
                 as they level up their ranks 📌
               </p>
               <a
-                href="#"
+                href="register"
                 className="mx-auto lg:mx-0 block w-fit mt-6 px-6 py-3 bg-amber-500 transition-all duration-300 text-white  rounded-lg hover:bg-amber-700"
               >
-                Learn More <span className="text-lg">→</span>
+                Start Now <span className="text-lg">→</span>
               </a>{" "}
             </div>
           </div>
