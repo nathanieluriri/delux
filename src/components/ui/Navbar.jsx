@@ -23,7 +23,7 @@ export function MenuButton() {
           </SheetDescription>
         </SheetHeader>
         <div className="grid gap-4 py-4 px-5">
-          <a href="#" className="text-white hover:text-gray-300">Home</a>
+          <a href="/" className="text-white hover:text-gray-300">Home</a>
           <a href="#" className="text-white hover:text-gray-300">About</a>
           <a href="#" className="text-white hover:text-gray-300">Services</a>
           <a href="#" className="text-white hover:text-gray-300">Contact</a>
@@ -38,6 +38,7 @@ export function Navbar() {
     <nav className="bg-[rgb(35,23,12)] p-4">
       <div className="max-w-screen-[1600px] mx-auto flex justify-around items-center">
         {/* Logo */}
+        <a href="/">
         <div className="text-white text-2xl font-bold">
           <Image
             src={'/logo.png'}
@@ -46,16 +47,17 @@ export function Navbar() {
             alt='Logo'
           />
         </div>
+        </a>
         <div></div>
         <div></div>
         <div></div>
         <div></div>
         {/* Desktop Navbar (hidden on mobile, visible on md and larger screens) */}
         <div className="hidden md:flex space-x-6">
-          <a href="#" className="text-white hover:text-gray-300">Home</a>
-          <a href="#" className="text-white hover:text-gray-300">About</a>
-          <a href="#" className="text-white hover:text-gray-300">Services</a>
-          <a href="#" className="text-white hover:text-gray-300">Contact</a>
+          <a href="/" className="text-white hover:text-gray-300">Home</a>
+          <a href="#about-section" className="text-white hover:text-gray-300">About</a>
+          <a href="#services-section" className="text-white hover:text-gray-300">Services</a>
+          <a href="#contact-section" className="text-white hover:text-gray-300">Contact</a>
         </div>
 
         {/* Mobile Menu Button */}

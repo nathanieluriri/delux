@@ -42,7 +42,7 @@ export default function Home() {
 
 function FeaturesSection() {
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 text-left mx-auto max-w-2xl sm:mt-14 lg:mt-10 lg:max-w-4xl p-3">
+    <section id="feature-section" className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 text-left mx-auto max-w-2xl sm:mt-14 lg:mt-10 lg:max-w-4xl p-3">
       <FeaturesGrid />
     </section>
   );
@@ -50,7 +50,7 @@ function FeaturesSection() {
 
 function ContactSection() {
   return (
-    <section className="bg-gray-900 text-white w-full py-20 lg:py-32 px-8 xl:px-16">
+    <section id="contact-section" className="bg-gray-900 text-white w-full py-20 lg:py-32 px-8 xl:px-16">
       <ContactSectionComponent />
     </section>
   );

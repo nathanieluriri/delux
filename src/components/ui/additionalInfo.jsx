@@ -1,7 +1,7 @@
 import Image from "next/image";
 export function AdditionalInfo() {
   return (
-    <section className="bg-gray-100 relative overflow-hidden">
+    <section id="services-section" className="bg-gray-100 relative overflow-hidden">
       <div className="pt-23">
         <h2 className="text-center text-base/7 font-semibold  z-20 text-[rgb(82,81,22)]">
           Delux Services
