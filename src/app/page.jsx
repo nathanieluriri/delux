@@ -6,6 +6,8 @@ import { ContactSectionComponent } from "@/components/ui/contactSection";
 import { RankingSection } from "@/components/ui/rankingSection";
 import { AdditionalInfo } from "@/components/ui/additionalInfo";
 import { AjoSection } from "@/components/ui/ajoSection";
+import Image from "next/image";
+
 export default function Home() {
   return (
     <>
