@@ -32,8 +32,8 @@ const OverlayContent = ({ isOpen, onClose }) => {
         It is also important for you to join our verified social handles for more information on how Delux works.
         </p>
         <div className="mt-3.5 flex flex-row gap-10 items-center justify-around ">
-          <a href="#"> <div className="flex flex-col gap-5 items-center" ><FaWhatsapp size={30} color="#25D366" /><p className='text-black' >WhatsApp</p></div> </a>
-          <a href="#"> <div className="flex flex-col gap-5 items-center" > <FaTelegram size={30} color="#0088cc" /> <p className='text-black' >Telegram</p></div> </a>
+          <a href="api.deluxplatform.ng/whatsApplink"> <div className="flex flex-col gap-5 items-center" ><FaWhatsapp size={30} color="#25D366" /><p className='text-black' >WhatsApp</p></div> </a>
+          <a href="api.deluxplatform.ng/Telegramlink"> <div className="flex flex-col gap-5 items-center" > <FaTelegram size={30} color="#0088cc" /> <p className='text-black' >Telegram</p></div> </a>
         </div>
       </div>
     </div>

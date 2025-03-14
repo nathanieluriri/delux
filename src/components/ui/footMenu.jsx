@@ -33,12 +33,12 @@ export function FootMenu() {
                   Register
                 </p>
               </a>
-              <a target="_blank" href="#">
+              <a target="_blank" href="https://api.deluxplatform.ng/whatsApplink">
                 <p className="text-sm" variant="outline">
                   WhatsApp
                 </p>
               </a>
-               <a target="_blank" href="#">
+               <a target="_blank" href="https://api.deluxplatform.ng/Telegramlink">
                 <p className="text-sm" variant="outline">
                   Telegram
                 </p>
