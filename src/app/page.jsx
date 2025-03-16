@@ -1,23 +1,23 @@
 "use client";
 import { FeaturesGrid } from "@/components/ui/featuresSection";
 import { HeroSection } from "@/components/ui/heroSection";
+import { FootMenu } from "@/components/ui/footMenu";
 import { Padding } from "@/components/ui/padding";
-
-// pages/index.js or any other component
-import {useOverlay} from "@/components/ui/overlayComponent";
+import { Navbar } from "@/components/ui/Navbar";
+import { useOverlay } from "@/components/ui/overlayComponent";
 import { AboutSection } from "@/components/ui/aboutSection";
 import { ContactSectionComponent } from "@/components/ui/contactSection";
 import { RankingSection } from "@/components/ui/rankingSection";
 import { AdditionalInfo } from "@/components/ui/additionalInfo";
 import { AjoSection } from "@/components/ui/ajoSection";
-import Image from "next/image";
 
 export default function Home() {
   const { isOpen, openOverlay, closeOverlay, OverlayContent } = useOverlay();
   return (
     <>
-    <OverlayContent isOpen={isOpen} onClose={closeOverlay} />
-    <HeroSection />
+      <Navbar />
+      <OverlayContent isOpen={isOpen} onClose={closeOverlay} />
+      <HeroSection />
 
       <AboutSection />
       <div className="sm:hidden">
@@ -36,13 +36,18 @@ export default function Home() {
       <AdditionalInfo />
       <Padding />
       <AjoSection />
+      <Padding />
+      <FootMenu />
     </>
   );
 }
 
 function FeaturesSection() {
   return (
-    <section id="feature-section" className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 text-left mx-auto max-w-2xl sm:mt-14 lg:mt-10 lg:max-w-4xl p-3">
+    <section
+      id="feature-section"
+      className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 text-left mx-auto max-w-2xl sm:mt-14 lg:mt-10 lg:max-w-4xl p-3"
+    >
       <FeaturesGrid />
     </section>
   );
@@ -50,7 +55,10 @@ function FeaturesSection() {
 
 function ContactSection() {
   return (
-    <section id="contact-section" className="bg-gray-900 text-white w-full py-20 lg:py-32 px-8 xl:px-16">
+    <section
+      id="contact-section"
+      className="bg-gray-900 text-white w-full py-20 lg:py-32 px-8 xl:px-16"
+    >
       <ContactSectionComponent />
     </section>
   );

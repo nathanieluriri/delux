@@ -1,7 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import { FootMenu } from "@/components/ui/footMenu";
-import { Padding } from "@/components/ui/padding";
-import { Navbar } from "@/components/ui/Navbar";
+
 import "./globals.css";
 
 const geistSans = Geist({
@@ -16,19 +14,15 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Delux - Earn from daily Jobs",
-  description: "Monetize your social media effortlessly! Earn rewards by engaging with posts regularly ",
+  description:
+    "Monetize your social media effortlessly! Earn rewards by engaging with posts regularly ",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="max-w-[1600px] justify-center justify-self-center"
-       
-      >
-        <Navbar/>
+      <body className="max-w-[1600px] justify-center justify-self-center">
         {children}
-        <Padding />
-        <FootMenu/>
       </body>
     </html>
   );
