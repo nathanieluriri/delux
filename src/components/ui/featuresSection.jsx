@@ -71,25 +71,22 @@ export function FeaturesGrid() {
         </div>
       </div>
 
-     
-
       <div className="flex items-start gap-4 mt-10">
         <div className=" bg-amber-300 p-3 rounded-full">
-          <Clapperboard color="white" />
+          <FaGamepad color="white" />
         </div>
         <div className="flex-col flex gap-2">
-          <p className="font-bold text-lg">TikTok Monetisation 👇🏽👇🏽</p>
+          <p className="font-bold text-lg">Delux Games Feature 👇🏽👇🏽 </p>
           <p className="text-base/7 text-gray-600 ">
-            On Delux, our users can earn extra income from engaging on our
-            content and reposting it on TikTok. After reposting, users can
-            screenshot and attach their social media handles to gain access to
-            regular payments and lots of rewards for Social Media engagement....
-            In this way, users can earn up to 100 euros in a week
-            from their TikTok.
+            This is another innovative feature on Delux, where our users can
+            play lots of games to win prizes and earn extra cash every day. New
+            games would be available multiple times a day, and weekly, there
+            would be a general tournament, where all users can play and compete
+            for the Grand prize. Delux offers soooo many ways to earn extra
+            income for everyone 
           </p>
         </div>
       </div>
-
 
       <div className="flex items-start gap-4 mt-10">
         <div className=" bg-amber-300 p-3 rounded-full">
