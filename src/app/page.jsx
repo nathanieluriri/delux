@@ -2,7 +2,7 @@
 // import { FeaturesGrid } from "@/components/ui/featuresSection";
 import { HeroSection } from "@/components/ui/heroSection";
 // import { FootMenu } from "@/components/ui/footMenu";
-import { Padding } from "@/components/ui/padding";
+// import { Padding } from "@/components/ui/padding";
 import { Navbar } from "@/components/ui/Navbar";
 import { useOverlay } from "@/components/ui/overlayComponent";
 // import { AboutSection } from "@/components/ui/aboutSection";
@@ -34,9 +34,9 @@ export default function Home() {
       <ContactSection />
       <RankingSection />
       {/* <AdditionalInfo /> */}
-      <Padding />
+      {/* <Padding /> */}
       <AjoSection />
-      <Padding />
+      {/* <Padding /> */}
       {/* <FootMenu /> */}
     </>
   );
