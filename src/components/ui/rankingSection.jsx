@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export function RankingSection({ signUpPage=false}) {
+export function RankingSection({ signUpPage=false,url="https://wa.link/hb9d31"}) {
   if(signUpPage==false){
     
     return (
@@ -70,7 +70,7 @@ export function RankingSection({ signUpPage=false}) {
                 as they level up their ranks 📌
               </p>
               <a
-                href="https://wa.link/hb9d31"
+                href={url}
                 className="mx-auto lg:mx-0 block w-2/3 mt-6 px-6 py-3 bg-amber-500 transition-all duration-300 text-white  rounded-lg hover:bg-amber-700"
               >
                 Start Now <span className="text-lg">→</span>

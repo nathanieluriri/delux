@@ -15,9 +15,9 @@ export default function Home() {
   const { isOpen, openOverlay, closeOverlay, OverlayContent } = useOverlay();
   return (
     <>
-      <Navbar />
+      <Navbar signUpPage={true} url="https://api.deluxplatform.ng/whatsApplink" />
       <OverlayContent isOpen={isOpen} onClose={closeOverlay} />
-      <HeroSection />
+      <HeroSection signUpPage={true} url="https://api.deluxplatform.ng/whatsApplink" />
 
       {/* <AboutSection /> */}
       {/* <div className="sm:hidden">
@@ -31,11 +31,11 @@ export default function Home() {
       {/* <Padding />
       <Padding />
       <Padding /> */}
-      <ContactSection />
-      <RankingSection />
+      <ContactSection url="https://api.deluxplatform.ng/whatsApplink"  signUpPage={true} />
+      <RankingSection url="https://api.deluxplatform.ng/whatsApplink" signUpPage={true} />
       {/* <AdditionalInfo /> */}
       {/* <Padding /> */}
-      <AjoSection />
+      <AjoSection url="https://api.deluxplatform.ng/whatsApplink" signUpPage={true}/>
       {/* <Padding /> */}
       {/* <FootMenu /> */}
     </>
@@ -53,13 +53,13 @@ export default function Home() {
 //   );
 // }
 
-function ContactSection() {
+function ContactSection({signUpPage=false,url="https://api.deluxplatform.ng/whatsApplink"}) {
   return (
     <section
       id="contact-section"
       className="bg-gray-900 text-white w-full py-20 lg:py-32 px-8 xl:px-16"
     >
-      <ContactSectionComponent />
+      <ContactSectionComponent  signUpPage={signUpPage} url={url}/>
     </section>
   );
 }

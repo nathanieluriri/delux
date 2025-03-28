@@ -1,7 +1,7 @@
 "use client";
 import {useOverlay} from "@/components/ui/overlayComponent";
 import Link from "next/link";
-export function ContactSectionComponent({ signUpPage=false}) {
+export function ContactSectionComponent({ signUpPage=false,url="https://wa.link/hb9d31"}) {
   const { isOpen, openOverlay, closeOverlay, OverlayContent } = useOverlay();
   if (signUpPage==false){
   return (
@@ -60,7 +60,7 @@ export function ContactSectionComponent({ signUpPage=false}) {
           >
             Regsiter <span className="text-lg">→</span>
           </a> */}
-          <Link  href="https://wa.link/hb9d31" className="text-center flex items-center w-full">
+          <Link  href={url} className="text-center flex items-center w-full">
           <button className="text-sm w-full  bg-amber-500 text-center text-white px-6 py-2 rounded-lg duration-300 flex items-center gap-2 mt-4 m-auto hover:bg-amber-600 transition-all">
              <p className="text-center w-full"> Get Started <span className="text-lg">→</span></p>
             </button></Link>
