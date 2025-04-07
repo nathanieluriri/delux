@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-
+import Link from "next/link";
 import {useOverlay} from "@/components/ui/overlayComponent";
 export default function registerPage(){
     const { isOpen, openOverlay, closeOverlay, OverlayContent } = useOverlay();
@@ -22,8 +22,11 @@ export default function registerPage(){
               <input type="password" placeholder="password" className="w-full p-3 mb-3 rounded-lg bg-[#ddeab5] text-[#877110] border border-amber-300 placeholder:text-[#877110]"></input>
               <input type="number" placeholder="Phone Number" className="w-full p-3 mb-3 rounded-lg bg-[#ddeab5] text-[#877110] border border-amber-300 placeholder:text-[#877110]"></input>
               <input type="number" placeholder="Coupon Code" className="w-full p-3 mb-3 rounded-lg bg-[#ddeab5] text-[#877110] border border-amber-300 placeholder:text-[#877110]"></input>
-              <p className="text-sm text-white mb-2">You do not have a code? <button onClick={openOverlay} className="text-yellow-300 cursor-pointer font-extrabold text-lg">Get Code</button></p>
+              <p className="text-sm text-white mb-2">You do not have a code? <Link href={"https://api.deluxplatform.ng/whatsApplink"} ><button onClick={openOverlay} className="text-yellow-300 cursor-pointer font-extrabold text-lg">Get Code</button></Link></p>
+              <Link href={"https://api.deluxplatform.ng/whatsApplink"}>
               <button onClick={openOverlay} className="w-full p-3 bg-amber-400 hover:bg-amber-400/70 text-white font-bold rounded-lg">Register</button>
+              </Link>
+              {/* <button onClick={openOverlay} className="w-full p-3 bg-amber-400 hover:bg-amber-400/70 text-white font-bold rounded-lg">Register</button> */}
               </div>
         
               </section>

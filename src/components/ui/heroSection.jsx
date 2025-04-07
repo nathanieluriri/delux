@@ -58,7 +58,7 @@ export function HeroSection({signUpPage=false,url="https://wa.link/hb9d31"}) {
             your time online is valuable. Here, we offer job opportunities and
             financial empowerment for users globally.
           </p>
-          <Link  href={url} className="text-center flex items-center">
+          <Link  href={'/register'} className="text-center flex items-center">
           <button className="text-sm w-4/5  bg-amber-500 text-center text-white px-6 py-2 rounded-lg duration-300 flex items-center gap-2 mt-4 m-auto hover:bg-amber-600 transition-all">
              <p className="text-center w-full"> Get Started <span className="text-lg">→</span></p>
             </button></Link>
